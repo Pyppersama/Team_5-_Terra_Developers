@@ -687,6 +687,7 @@ svg{
 @media only screen and (max-width: 1024px) {
     footer{
         padding: 30px 50px;
+        Width: 100%;
     }
     .footer_loop{
         display: initial;   
