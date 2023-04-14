@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41a27b6985.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Home | SideHustle</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -11,12 +13,103 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-
+    <!-- navBar starts -->
+    <header class="headerWrapper">
+        <nav class="navBar">
+            <object data="./images/side-hustle-logo.svg"class="logoImg"></object>
+            <ul class="navList" id="navList">
+                <li class="navLink"><a href="#">Courses</a></li>
+                <li class="navLink"><a href="#">Bootcamp</a></li>
+                <li class="navLink"><a href="#">Blog</a></li>
+                <li class="navLogin"><a href="#">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- <i class="fa-solid fa-bars" style="color: #52a250;" id="barIcon"></i> -->
+        </nav>
     </header>
-    
-    <main>
+    <!-- navBar ends -->
 
+    <main>
+        <section class="heroSection">
+            <div class="notificationBar">
+                <p>Application to the internship is closed! -
+                    <a href="./login.html">Click here to Login</a>
+                </p>
+            </div>
+            <div class="mainHero">
+                <div class="heroRight">
+                    <h1>
+                        Gain in-demand skills for <span class="span">free</span>
+                    </h1>
+                    <p>Join the Side Hustle Internship to learn and get the hands-on experience needed. Our interns are ready to take on entry-level and junior positions in just 8 weeks.</p>
+                    <button class="btnLogin">Login</button>
+                    <ul>
+                        <li><object data="./images/jobberman.svg"></object></li>
+                        <li><object data="./images/raven-bank.svg"></object></li>
+                        <li><object data="./images/thire.svg" class="thire"></object></li>
+                    </ul>
+                </div>
+
+                <div class="heroBg">
+                    <img src="./images/hero-image.png" alt="Past Students" class="heroImg"/>
+                    <div class="info">
+                        <div class="circle"></div>
+                        <p>Over 300 thousand young Africans have started their journey into tech with us</p>
+                    </div>
+                    
+                    <button class="playVideo">
+                        <p><i class="fa-solid fa-circle-play" class="circlePlay"></i><span>Play to see Previous Experiences</span></p>
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 2nd Section -->
+        <section class="aboutSection">
+            <div class="aboutWrapper">
+                <div class="training">
+                    <h2>What you stand to <span class="span">gain</span></h2>
+                    <p>
+                        Since 2020, Side Hustle has trained over 350 thousand African youths in various fields across Engineering, Marketing, Product and Design.
+                    </p>
+                    <button class="btn">Sign up for FREE</button>
+                </div>
+
+                <div class="gridContainer">
+                    <div class="gridItem">
+                        <object data="./images/safety-certificate-outlined.svg"></object>
+                        <h3>Earn a certificate</h3>
+                        <p>All Side Hustle Internship finalists will be awarded a paid certificate of completion at the end of the Internship.</p>
+                    </div>
+                    <div class="gridItem">
+                        <object data="./images/safety-certificate-outlined.svg"></object>
+                        <h3>Get hands-on experience</h3>
+                        <p>
+                            During the Side Hustle Internship, you will be assigned projects and team assignments that will give you the needed experience, and help you build your portfolio, teamwork, and communication skills.
+                        </p>
+                    </div>
+                    <div class="gridItem">
+                        <object data="./images/read-outlined.svg"></object>
+                        <h3>Learn from the very best</h3>
+                        <p>
+                            Learning is a wonderful experience, and learning from the best makes everything ten times easier. The Side Hustle Internship mentors and lead instructors are all here to make your Internship experience unforgettable.
+                        </p>
+                    </div>
+                    <div class="gridItem">
+                        <object data="./images/read-outlined.svg"></object>
+                        <h3>Be a part of a fast-growing startup</h3>
+                        <p>
+                            During the bootcamp, all Side Hustle Internship finalists will have the opportunity to build a fast-paced start-up.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
