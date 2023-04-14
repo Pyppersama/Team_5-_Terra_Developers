@@ -534,9 +534,9 @@ body {
 
 /* footer styling starts here */
 footer{
-    background-color: black;
+    background-color: #1A1F1A;
     color: white;
-    padding: 30px 120px;
+    padding: 30px 80px;
  }
 .footer_loop{
     margin: 50px auto 80px;
