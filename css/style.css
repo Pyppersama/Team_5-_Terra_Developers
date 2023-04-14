@@ -12,7 +12,6 @@ footer{
 }
 .footer_loop_1{
     flex-basis: 60%;
-
 }
 .footer_loop_1 h1{
     font-size: 45px;
@@ -87,6 +86,20 @@ svg{
     font-size: 17px;
     font-weight: bold;
 }
+.footer_work_1 a{
+    text-decoration: none;
+    color: #54a453;
+    border-bottom: 1px solid #54a453;
+    padding-bottom:3px;
+    font-weight: 600;
+    font-size: 22px;
+    display: inline-block;
+    margin: 30px 0;
+}
+.footer_work_1 svg{
+    color: #54a453;
+    size: 40px;
+}
 .footer_work_1 p{
     width: 50%;
     font-size:14px;
@@ -121,25 +134,26 @@ svg{
 .footer_contact{
     margin: 40px auto 20px;
 }
-.footer_contact a{
-    text-decoration: none;
-    color: #54a453;
-    border-bottom: 1px solid #54a453;
-    padding-bottom:3px;
-    font-weight: 600;
-    font-size: 22px;
-}
-.footer_contact svg{
-    color: #54a453;
-    size: 40px;
-}
 .footer_contact p{
     font-size:13px;
     color: #676689;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1330px) {
+    footer{
+        padding: 30px 70px;
+    }
+    .footer_loop_1{
+        flex-basis: 50%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer{
+        padding: 30px 50px;
+    }
     .footer_loop{
         display: initial;   
     }
@@ -158,4 +172,43 @@ svg{
     .footer_links{
         margin-right:40px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    footer{
+        padding: 30px 40px;
+    }
+    .footer_work{
+        display: initial;
+    }
+    .footer_work_1 p{
+        width: 100%;
+    }
+    .footer_work_2{
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer{
+        padding: 30px 20px;
+    }
+    .footer_loop_1 h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer_loop_2 button{
+        margin-right:10px;
+        margin-bottom: 20px;
+    }
+    .footer_contact p{
+        text-align: center;
+    }
+    /* .footer_loop_1 h1{
+        font-size: 25px;
+    } */
 }
