@@ -56,7 +56,7 @@ body {
 }
 
 .navLink {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .navLogin {
@@ -393,7 +393,6 @@ body {
         margin-left: 3rem;
     }
     .mainHero {
-        /* outline: 1px solid red; */
         margin-left: 1rem;
     }
     .heroRight {
@@ -414,66 +413,48 @@ body {
     }
 }
 
-@media screen and (max-width: 896px) {
-    /* .headerWrapper {
-        padding-left: 2rem;
-    } */
+@media screen and (max-width: 768px) {
     .hamburger {
-        position: absolute;
-        left: -10rem;
+        left: -7rem;
     }
     .notificationBar {
-        width: 550px;
-        margin-left: 3rem;
-    }
-    .mainHero {
-        margin-left: 1rem;
-    }
-    .heroRight {
-        width: 560px;
+        width: 590px;
     }
     .heroRight h1 {
         width: 500px;
-        height: 96px;
-        font-size: 2.25rem;
+        margin-left: 3rem;
     }
     .heroRight p {
-        width: 600px;
-        height: 48px;
+        width: 550px;
+        margin-left: 1rem;
     }
     .btnLogin {
-        margin-left: 1rem;
         width: 600px;
+        margin-left: -2rem;
     }
     .heroImg {
         width: 600px;
         height: 254px;
+        margin-left: .3rem;
     }
     .playVideo {
-        margin-left: 10rem;
+        margin-top: 2rem;
+        margin-left: 12rem;
     }
     .heroRight ul {
         margin-left: 10rem;
     }
-    .aboutSection {
-        height: 1100px;
-        width: 700px;
-    }
-    .aboutWrapper {
-        padding-left: 4rem;
-    }
     .training h2 {
-        font-size: 1.875rem;
+        margin-left: 2rem;
     }
     .training p {
-        width: 650px;
-        height: 55px;
-        margin-left: 4rem;
+        width: 500px;
+        margin-left: 1rem;
     }
     .gridContainer {
         display: grid;
         gap: 3rem;
-        margin-left: 2rem;
+        margin-left: -3rem;
         margin-top: -1rem;
         grid-template-columns: auto;
     }
@@ -482,12 +463,228 @@ body {
         margin-left: 4rem;
         opacity: 0.9;
     }
+    .aboutSection {
+        height: 1200px;
+    }
     .btn {
        position: relative;
-       top: 45rem;
+       top: 46rem;
        width: 600px;
-       margin-left: 3rem;
+       margin-left: 1rem;
     }
+
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: -6rem;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #1F7144;
+        margin: 0.375rem 40rem;
+        position: relative;
+        top: -2.6rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 1;
+    }
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .notificationBar {
+        width: 460px;
+        font-size: .75rem;
+        margin-left: 2rem;
+    }
+    .mainHero {
+        /* outline: 1px solid red; */
+        width:475px;
+        margin-left: 2rem;
+    }
+    .heroRight h1 {
+        width: 481px;
+        height: 128px;
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-left: -1rem;
+    }
+    .heroRight p {
+        width: 481px;
+        height: 75px;
+        margin-left: .1rem;
+        text-align: center;
+    }
+    .btnLogin {
+        margin-left: -12rem;  
+        width: 480px; 
+    }
+    .heroImg {
+        width: 480px;
+        height: 201px;
+        margin-top: .6rem;
+        margin-left: -1rem;
+    }
+    .playVideo {
+        margin-left: 5rem;
+    }
+    .heroRight ul {
+        margin-left: 3rem;
+        position: absolute;
+        bottom: 6rem;
+    }
+    .aboutWrapper {
+        width: 480px;
+        margin-left: 2rem;
+    }
+    .training h2 {
+        width: 480px;
+        height: 36px;
+       font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: -8rem;
+    }
+    .training p {
+        width: 480px;
+        height: 40px;
+        margin-left: -7.5rem;
+    }
+    .gridItem h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        /* margin-left: -16rem; */
+    }
+    .gridSpace {
+        margin-bottom: 2.6rem;
+    }
+    .gridItem p {
+        width: 417px;
+        height: 40px;
+        margin-left: -3rem;
+    }
+    .btn {
+        width: 481px;
+        height: 48px;
+        margin-bottom: -10rem;
+        margin-left: -8rem;
+    }
+
+}
+
+@media screen and (min-width: 340px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: -10rem;
+    
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #1F7144;
+        margin: 0.375rem 40rem;
+        position: relative;
+        top: -2.6rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 1;
+    }
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .notificationBar {
+        width: 360px;
+        height: 48px;
+        font-size: .75rem;
+        margin-left: 2rem;
+    }
+    .mainHero {
+        width:35px;
+        margin-left: 2rem;
+    }
+    
+    .heroRight h1 {
+        width: 360px;
+        height: 128px;
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-left: -1rem;
+    }
+    .heroRight p {
+        width: 361px;
+        height: 75px;
+        margin-left: -1rem;
+        text-align: center;
+    }
+    .btnLogin {
+        margin-left: -20rem;  
+        width: 360px; 
+    } 
+    .heroImg {
+        width: 310px;
+        height: 130px;
+        margin-top: .6rem;
+        margin-left: .6rem;
+    }
+    .playVideo {
+        margin-left: 2rem;
+    }
+    .heroRight ul {
+        margin-left: .5rem;
+        position: absolute;
+        bottom: -4rem;
+    }
+    .aboutSection {
+        height: 820px;
+    } 
+    .training h2 {
+        width: 310px;
+        height: 36px;
+        margin-left: -7rem;
+    }
+    .training p {
+        width: 310px;
+        height: 60px;
+        margin-left: -7rem;
+        margin-bottom: 4rem;
+    }
+    .gridItem h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-left: -9rem; 
+    }
+    .gridItem object {
+        margin-left: -9rem;
+    }
+    
+    .gridSpace {
+        margin-bottom: 2.6rem;
+    }
+    .gridItem p {
+        width: 248px;
+        height: 80px;
+        margin-left: -3rem;
+    }
+    .btn {
+        width: 361px;
+        height: 48px;
+        margin-bottom: -20rem;
+        margin-left: -9rem;
+    } 
 }
  
 @media screen and (min-width: 1500px) {
